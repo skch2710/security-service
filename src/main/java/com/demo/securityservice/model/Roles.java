@@ -27,6 +27,6 @@ public class Roles {
 
 	private boolean isExternalRole;
 
-	private boolean isThisCustomRole;
+//	private boolean isThisCustomRole;
 
 }
