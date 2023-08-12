@@ -15,7 +15,7 @@ spring:
         format_sql: true
     show-sql: false
     
-#https://cryptotools.net/rsagen
+#https://cryptotools.net/rsagen -- To genarate Key pair
 
 app:
   jwt:
