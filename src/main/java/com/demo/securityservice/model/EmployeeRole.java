@@ -21,7 +21,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "emp_roles", schema = "public")
+@Table(name = "emp_roles", schema = "login")
 @JsonIgnoreProperties(ignoreUnknown = true, value = { "employee" })
 public class EmployeeRole {
 
@@ -42,5 +42,13 @@ public class EmployeeRole {
 	private Date roleEndDate;
 
 	private boolean isActive;
+
+	private Long createdById;
+
+	private Date createdDate;
+
+	private Long modifiedById;
+
+	private Date modifiedDate;
 
 }
