@@ -30,8 +30,8 @@ public class CustomUserDetailsService implements UserDetailsService {
 		userDTO.setPassword(model.getPasswordSalt());
 		List<GrantedAuthority> grantedAuthorities = new ArrayList<GrantedAuthority>();
 
-//		GrantedAuthority authority = new SimpleGrantedAuthority(model.getEmployeeRole().getRole().getRoleName());
-		GrantedAuthority authority = new SimpleGrantedAuthority(model.getEmployeeRole().getRole().getRoleName()+"-"+model.getEmployeeRole().getRole().isExternalRole());
+		GrantedAuthority authority = new SimpleGrantedAuthority(model.getEmployeeRole().getRole().getRoleName());
+//		GrantedAuthority authority = new SimpleGrantedAuthority(model.getEmployeeRole().getRole().getRoleName()+"-"+model.getEmployeeRole().getRole().isExternalRole());
 		grantedAuthorities.add(authority);
 		
 //		for(UserPrivilege privilege:model.getUserPrivilege()) {
